@@ -28,7 +28,8 @@ public static  int step(int n){
       int memo[] = new int[n+1];
       int count2 = stepMemo(n,memo);
 
-      System.out.println("Number of ways"+count1);
+      System.out.println("Number of ways (without memo)"+count1);
+      System.out.println("Number of ways (with memo)"+count1);
   }
 
 }
