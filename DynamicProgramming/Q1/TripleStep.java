@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class TripleStep{
 public static  int step(int n){
     if(n<0)
@@ -13,7 +14,7 @@ public static  int step(int n){
       return 0;
       else if(n==0)
       return 1;
-      else if(memo[n] > 0)
+      else if(memo[n] > -1)
       return memo[n];
       else {
         memo[n] = stepMemo(n-1,memo) + stepMemo(n-2,memo) + stepMemo(n-3,memo);
@@ -26,6 +27,7 @@ public static  int step(int n){
       int n = 20;
       int count1 = step(n);
       int memo[] = new int[n+1];
+      Arrays.fill(memo,-1);
       int count2 = stepMemo(n,memo);
 
       System.out.println("Number of ways (without memo)"+count1);
