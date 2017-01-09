@@ -23,4 +23,20 @@ public class SearchInGraph{
       }
     }
   }
+
+  void DFS(Node current,HashMap<Node,Boolean> visited){
+    if(current == null)
+    return;
+    ArrayList<Node> childs = current.getChilds();
+    System.out.println(current.data);
+    visited.put(current,true);
+    for(Node node : childs){
+      if(!visited.containsKey(node)){
+        DFS(node,visited);
+      }
+    }
+
+
+
+  }
 }
