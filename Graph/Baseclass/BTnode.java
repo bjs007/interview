@@ -1,6 +1,6 @@
 package Baseclass;
 public class BTnode{
-  int data;
+  public int data;
 public   BTnode left;
 public   BTnode right;
 public   BTnode(int data){

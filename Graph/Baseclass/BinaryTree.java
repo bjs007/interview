@@ -1,6 +1,6 @@
 package Baseclass;
 public  class BinaryTree{
-  BTnode createNode(int data){
+  public BTnode createNode(int data){
     return new BTnode(data);
   }
 
