@@ -8,13 +8,15 @@ public class Graph{
     nodes.add(node);
   }
   void insertChild(Node parent,Node child){
-    if(parent==null || child == null)
-    return;
-
-    ArrayList<Node>childs = parent.getChilds();
+    if(parent!=null && child != null){
+    ArrayList<Node> childs = parent.getChilds();
     childs.add(child);
-  }
+    }
 
+  }
+ int size(){
+   return nodes.size();
+ }
   ArrayList<Node> getGraphNodes(){
     return nodes;
   }
