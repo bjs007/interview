@@ -1,9 +1,9 @@
 package Baseclass;
 public class BTnode{
   int data;
-  BTnode left;
-  BTnode right;
-  BTnode(int data){
+public   BTnode left;
+public   BTnode right;
+public   BTnode(int data){
     this.data = data;
     this.left = null;
     this.right = null;
