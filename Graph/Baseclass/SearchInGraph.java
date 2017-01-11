@@ -1,3 +1,4 @@
+package Baseclass;
 import java.util.*;
 public class SearchInGraph{
   Graph graph;
