@@ -8,11 +8,11 @@ public class BTnode{
     this.right = null;
   }
 
-  void setRightChild(BTnode rightChild){
+public   void setRightChild(BTnode rightChild){
     if(rightChild != null)
     this.right = rightChild;
   }
-  void setLeftChild(BTnode leftChild){
+public   void setLeftChild(BTnode leftChild){
     if(leftChild !=null)
     this.left = leftChild;
   }
